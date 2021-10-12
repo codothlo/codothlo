@@ -1,0 +1,69 @@
+
+body
+{
+	background-image: url("fondcv.jpg");
+}
+
+
+
+h1,h2
+{
+	font-family: arial; serif;
+}
+h1, h1 + p
+{
+	text-align: center;
+}
+img
+{
+	float: none;
+	border: 1px black solid;
+	box-shadow: 3px 3px 1px grey;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+}
+
+h2
+{
+	color:  #8b4513;
+}
+section
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	margin-right: 2%;
+}
+
+#liseret, #contenu
+{
+	display: inline-block;
+	vertical-align: top;
+}
+#liseret
+{
+	width: 10%;
+	margin-right: 3%;
+	height: 500px;
+	background-image: url("fondblock.jpg");
+	border-radius: 10px;
+}
+#contenu
+{
+	width: 85%;
+}
+@media all and (max-width: 1024px)  /*adapatation de page en fonction de la largeur de l'ecran*/
+{
+	nav	{width: auto; text-align: left;}
+	ul	{flex-direction: column;}
+	li  {padding-left: 2px;}
+	nav a  {font-size: 1em;}
+	nav a: hover {display: none;}
+	section	 {flex-direction: column;}
+	#liseret {display: none;}
+	
+	#photo_moi img  {width: 90px; float: right; margin-left: 15px;}
+
+}
